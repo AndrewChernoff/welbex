@@ -1,0 +1,43 @@
+.header {
+    display: grid;
+    grid-template-columns: 25% 40% 35%;
+    padding: 50px;
+    align-items: flex-start;
+    &__logo {
+        display:flex;
+        flex-direction: column;
+        color: #E4E5EA;
+/*         width: 20%;*/
+        img {
+            display: block;
+            width: 140px;
+        }
+        p {
+            font-size: 10px;
+        }
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+            align-items: center;
+            list-style:none;
+            padding:0;
+            margin:0;
+/*             width: 40%; */
+        li {
+            color: #E4E5EA;
+        }
+    }
+    &__contacts {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: #E4E5EA;
+        margin-left: 60px;
+        /* width: 30%; */
+        &_icon {
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
