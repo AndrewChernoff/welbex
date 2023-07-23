@@ -1,13 +1,14 @@
+@import '../../common/styles/styles.scss';
+
 .header {
     display: grid;
-    grid-template-columns: 25% 40% 35%;
+    grid-template-columns: 20% 45% 35%;
     padding: 50px;
     align-items: flex-start;
     &__logo {
         display:flex;
         flex-direction: column;
-        color: #E4E5EA;
-/*         width: 20%;*/
+        color: $base-color;
         img {
             display: block;
             width: 140px;
@@ -23,18 +24,17 @@
             list-style:none;
             padding:0;
             margin:0;
-/*             width: 40%; */
         li {
-            color: #E4E5EA;
+            font-size: 16px;
+            color: $base-color;
         }
     }
     &__contacts {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        color: #E4E5EA;
+        color: $base-color;
         margin-left: 60px;
-        /* width: 30%; */
         a {
             cursor: pointer;
         }

@@ -1,0 +1,84 @@
+@import '../../common/styles/styles.scss';
+
+.main {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 80px 0;
+    &__title {
+        h1 {
+            font-weight: 400;
+            font-family: Inter;
+            font-size: 48px;
+            color: $base-color;
+            margin: 0;
+
+            span {
+                margin: 0;
+                font-weight: 900;
+                font-size: 72px;
+                background: -webkit-radial-gradient(#FF3F78, #FCB045);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+        p {
+            font-weight: 400;
+            font-size: 18px;
+            color: $base-color;
+        }
+    }
+    &__content {
+        width: 35%;
+        h2 {
+            text-align: right;
+            line-height: 22px;
+            font-size: 18px;
+            font-weight: 500;
+            color: $base-color;
+
+            span {
+                font-size: 18px;
+                font-weight: 700;
+                background: -webkit-radial-gradient(#FCB045,#FD1D1D);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                text-transform: uppercase;
+            }
+        }
+
+        &_gifts {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+        &_giftsItem {
+            color: $base-color;
+            min-width: 90px;
+            max-width: 143px;
+            text-align: right;
+            h3 {
+                margin: 0;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 22px;
+            }
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 20px;
+            }
+        }
+
+        button {
+            display: block;
+            margin: 65px auto 0 auto;
+            width: 262px;
+            height: 61px;
+            color: $base-color;
+            background: #0d99ff;
+            cursor: pointer;
+        }
+    }
+}
