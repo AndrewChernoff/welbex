@@ -1,8 +1,5 @@
 import logo from '../../imgs/logo_welbex.png'
 import s from './Header.module.scss';
-/* import { FaTelegram } from "react-icons/fa6";
-import { FaViber } from "react-icons/fa6";
-import { FaWhatsapp } from "react-icons/fa6"; */
 import telegram from '../../imgs/telegram.png'
 import viber from '../../imgs/viber.png'
 import whatsapp from '../../imgs/whatsapp.png'
