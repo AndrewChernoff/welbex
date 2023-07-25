@@ -1,15 +1,6 @@
-/* * {
-  font-family: 'Montserrat', sans-serif;
-}
- */
 .app {
-  /* height: 100vh; */
-  /* background-image: radial-gradient(farthest-corner at 100px 100px, rgb(72, 18, 18) , rgb(20, 20, 58)); */
- /*  background: rgb(20 19 19); */
+ 
  background: #08050d;
-/* background: -webkit-linear-gradient(farthest-corner at 100px 100px, rgb(72, 18, 18) , rgb(20, 20, 58));
-background: linear-gradient(farthest-corner at 100px 100px, rgb(72, 18, 18) , rgb(20, 20, 58));*/
-
   
   &__gradientBlock {
       position: absolute;
@@ -18,6 +9,10 @@ background: linear-gradient(farthest-corner at 100px 100px, rgb(72, 18, 18) , rg
       height: 781px;
       background-image: radial-gradient(circle farthest-side at 50% 50%, #961A1A45, #961A1A00);
       z-index: 0;
+      @media screen and (max-width: 730px) {
+        width: 430px;
+        height: 430px;
+      }
     }
 
   &__topGradientBlock {
@@ -28,11 +23,15 @@ background: linear-gradient(farthest-corner at 100px 100px, rgb(72, 18, 18) , rg
       height: 381px;
       background-image: radial-gradient(circle farthest-side at 50% 50%, #2b113c, #961A1A00);
       z-index: 0;
+      @media screen and (max-width: 730px) {
+        width: 251px;
+        height: 251px;
+      }
     }
 
     .purpleBall {
       position: absolute;
-      left:58%;
+      left: 60%;
       width: 60px;
       height: 60px;
     }
@@ -47,13 +46,28 @@ background: linear-gradient(farthest-corner at 100px 100px, rgb(72, 18, 18) , rg
 
     .smallRedBall {
       position: absolute;
-      bottom: -1%;
-      left: 50%;
+      bottom: 10%;
+      left: 60%;
     }
   }
 
 .container {
-  height: 100%;///
+  height: 100%;
   max-width: 1140px;
   margin: 0 auto;
+  @media screen and (max-width: 1150px) {
+    max-width: 950px;
+  }
+  @media screen and (max-width: 980px) {
+    max-width: 800px;
+  }
+  @media screen and (max-width: 830px) {
+    max-width: 700px;
+  }
+  @media screen and (max-width: 730px) {
+    max-width: 620px;
+  }
+  @media screen and (max-width: 650px) {
+    max-width: 530px;
+  }
 }

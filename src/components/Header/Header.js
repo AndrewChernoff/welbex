@@ -9,7 +9,8 @@ function Header() {
         <header className={s.header}>
             <div className={s.header__logo}>
                 <img src={logo} alt='logo'/>
-                <p>крупный интегратор CRM в Росcии и ещё 8 странах</p>
+                <p>крупный интегратор CRM <br/>
+                в Росcии и ещё 8 странах</p>
             </div>
 
             <ul className={s.header__list}>
@@ -22,9 +23,11 @@ function Header() {
 
             <div className={s.header__contacts}>
                 <a tel='+75555555555' className={s.header__contacts_phone}>+7 555 555-55-55</a>
-                <a href='#' ><img src={telegram} className={s.header__contacts_icon} style={{color: '#E4E5EA'}}/></a>
-                <a href='#' ><img src={viber} className={s.header__contacts_icon} style={{color: '#E4E5EA'}}/></a>
-                <a href='#'><img src={whatsapp} className={s.header__contacts_icon} style={{color: '#E4E5EA'}}/></a>
+                <div className={s.header__contacts_logos}>
+                    <a href='#' ><img src={telegram} className={s.header__contacts_icon} style={{color: '#E4E5EA'}}/></a>
+                    <a href='#' ><img src={viber} className={s.header__contacts_icon} style={{color: '#E4E5EA'}}/></a>
+                    <a href='#'><img src={whatsapp} className={s.header__contacts_icon} style={{color: '#E4E5EA'}}/></a>
+                </div>
             </div>
         </header>
     )

@@ -9,10 +9,12 @@ function Footer() {
         <footer className={s.footer}>
             <div className={s.footer__company}>
                 <h4 className={s.footer__company_title}>О компании</h4>
+                <div className={s.footer__menu_list}>
                 <ul>
-                    <li> <a href='#'>Политика конфиденциальности</a></li>
+                    <li> <a href='#'>Партнёрская программа</a></li>
                     <li> <a href='#'>Вакансии</a></li>
                 </ul>
+                </div>
             </div>
 
             <div className={s.footer__menu}>
