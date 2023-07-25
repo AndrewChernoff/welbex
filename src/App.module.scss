@@ -1,11 +1,56 @@
-* {
+/* * {
   font-family: 'Montserrat', sans-serif;
 }
-
+ */
 .app {
   /* height: 100vh; */
-  background-image: radial-gradient(farthest-corner at 100px 100px, rgb(72, 18, 18) , rgb(20, 20, 58));
-}
+  /* background-image: radial-gradient(farthest-corner at 100px 100px, rgb(72, 18, 18) , rgb(20, 20, 58)); */
+ /*  background: rgb(20 19 19); */
+ background: #08050d;
+/* background: -webkit-linear-gradient(farthest-corner at 100px 100px, rgb(72, 18, 18) , rgb(20, 20, 58));
+background: linear-gradient(farthest-corner at 100px 100px, rgb(72, 18, 18) , rgb(20, 20, 58));*/
+
+  
+  &__gradientBlock {
+      position: absolute;
+      left: -20%;
+      width: 781px;
+      height: 781px;
+      background-image: radial-gradient(circle farthest-side at 50% 50%, #961A1A45, #961A1A00);
+      z-index: 0;
+    }
+
+  &__topGradientBlock {
+      position: absolute;
+      left: 35%;
+      top: -25%;
+      width: 381px;
+      height: 381px;
+      background-image: radial-gradient(circle farthest-side at 50% 50%, #2b113c, #961A1A00);
+      z-index: 0;
+    }
+
+    .purpleBall {
+      position: absolute;
+      left:58%;
+      width: 60px;
+      height: 60px;
+    }
+
+    .redball {
+      position: absolute;
+      left: 40%;
+      top: 10%;
+      width: 83px;
+      height: 83px;
+    }
+
+    .smallRedBall {
+      position: absolute;
+      bottom: -1%;
+      left: 50%;
+    }
+  }
 
 .container {
   height: 100%;///

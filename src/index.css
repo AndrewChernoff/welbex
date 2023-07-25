@@ -7,10 +7,24 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
+@font-face {
+  font-family: "Inter";
+  src: local("Inter"),
+   url("./fonts/inter/Inter-V.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"),
+   url("./fonts/montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: bold;
+ }
+
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
+} */
 
 
  /* body {

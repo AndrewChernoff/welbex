@@ -6,15 +6,17 @@
 
     padding: 80px 0;
     &__title {
+        z-index: 1;
         h1 {
-            font-weight: 400;
             font-family: Inter;
+            font-weight: 400;
             font-size: 48px;
             color: $base-color;
             margin: 0;
 
             span {
                 margin: 0;
+                font-family: Inter;
                 font-weight: 900;
                 font-size: 72px;
                 background: -webkit-radial-gradient(#FF3F78, #FCB045);
@@ -23,6 +25,7 @@
             }
         }
         p {
+            font-family: 'Montserrat';
             font-weight: 400;
             font-size: 18px;
             color: $base-color;
@@ -31,10 +34,11 @@
     &__content {
         width: 35%;
         h2 {
+            font-family: 'Inter';
+            font-weight: 500;
             text-align: right;
             line-height: 22px;
             font-size: 18px;
-            font-weight: 500;
             color: $base-color;
 
             span {
@@ -59,14 +63,16 @@
             max-width: 143px;
             text-align: right;
             h3 {
+                font-family: 'Inter';
+                font-weight: 500;
                 margin: 0;
                 font-size: 18px;
-                font-weight: 500;
                 line-height: 22px;
             }
             p {
-                font-size: 16px;
+                font-family: 'Montserrat';
                 font-weight: 400;
+                font-size: 16px;
                 margin-top: 10px;
             }
         }

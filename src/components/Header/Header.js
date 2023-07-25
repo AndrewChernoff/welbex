@@ -21,7 +21,7 @@ function Header() {
             </ul>
 
             <div className={s.header__contacts}>
-                <a tel='+75555555555'>+7 555 555-55-55</a>
+                <a tel='+75555555555' className={s.header__contacts_phone}>+7 555 555-55-55</a>
                 <a href='#' ><img src={telegram} className={s.header__contacts_icon} style={{color: '#E4E5EA'}}/></a>
                 <a href='#' ><img src={viber} className={s.header__contacts_icon} style={{color: '#E4E5EA'}}/></a>
                 <a href='#'><img src={whatsapp} className={s.header__contacts_icon} style={{color: '#E4E5EA'}}/></a>

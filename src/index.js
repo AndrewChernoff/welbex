@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import './fonts/inter/Inter-V.ttf';
+import './fonts/montserrat/Montserrat-VariableFont_wght.ttf';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
