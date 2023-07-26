@@ -5,6 +5,12 @@
     grid-template-columns: 20% 45% 35%;
     padding: 50px;
     align-items: flex-start;
+    padding-left: 0;
+    padding-right: 0;
+    @media screen and (max-width: 1080px) {
+        grid-template-columns: 25% 45% 30%;
+          }
+
     &__logo {
         display:flex;
         flex-direction: column;
