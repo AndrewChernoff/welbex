@@ -9,12 +9,9 @@
         padding-top: 160px;
     }
 
-    @media screen and (max-width:
-
-        /* 670 */
-        801px) {
+    @media screen and (max-width: 801px) {
         flex-direction: column;
-        align-items: center;
+        margin: 0 auto;
         padding-top: 110px;
     }
 
@@ -114,7 +111,7 @@
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
-            margin-top: 50px;
+            margin: 50px auto;
 
             @media screen and (max-width: 1100px) {
                 gap: 15px;
