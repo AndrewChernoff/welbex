@@ -9,13 +9,14 @@ function Header() {
     return (
      <header className={s.header}>
         <div className={style.container}>
-            <div className={s.header__logo}>
+            <div className={s.header__content}>
+            <div className={s.header__content__logo}>
                 <img src={logo} alt='logo'/>
                 <p>крупный интегратор CRM <br/>
                 в Росcии и ещё 8 странах</p>
             </div>
 
-            <ul className={s.header__list}>
+            <ul className={s.header__content__list}>
                 <li>Услуги</li>
                 <li>Виджеты</li>
                 <li>Интеграции</li>
@@ -23,26 +24,18 @@ function Header() {
                 <li>Сертификаты</li>
             </ul>
 
-            <div className={s.header__contacts}>
-                <a tel='+75555555555' className={s.header__contacts_phone}>+7 555 555-55-55</a>
-                <div className={s.header__contacts_logos}>
-                    <a href='#' ><img src={telegram} className={s.header__contacts_icon} style={{color: '#E4E5EA'}}/></a>
-                    <a href='#' ><img src={viber} className={s.header__contacts_icon} style={{color: '#E4E5EA'}}/></a>
-                    <a href='#'><img src={whatsapp} className={s.header__contacts_icon} style={{color: '#E4E5EA'}}/></a>
+            <div className={s.header__content__contacts}>
+                <a tel='+75555555555' className={s.header__content__contacts_phone}>+7 555 555-55-55</a>
+                <div className={s.header__content__contacts_logos}>
+                    <a href='#' ><img src={telegram} className={s.header__content__contacts_icon} style={{color: '#E4E5EA'}}/></a>
+                    <a href='#' ><img src={viber} className={s.header__content__contacts_icon} style={{color: '#E4E5EA'}}/></a>
+                    <a href='#'><img src={whatsapp} className={s.header__content__contacts_icon} style={{color: '#E4E5EA'}}/></a>
                 </div>
             </div>
             </div>
+            </div>
         </header>
-        /* <header className={s.smallHeader__list}>
-        <ul className={s.smallHeader__list}>
-                <li>Услуги</li>
-                <li>Виджеты</li>
-                <li>Интеграции</li>
-                <li>Кейсы</li>
-                <li>Сертификаты</li>
-            </ul>
-
-        </header> */
+    
     )
 }
 

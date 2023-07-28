@@ -74,6 +74,9 @@
       top: 10%;
       width: 83px;
       height: 83px;
+      @media screen and (max-width: 980px) {
+        display: none;
+      }
     }
 
     .smallRedBall {
@@ -84,29 +87,10 @@
         bottom: 32%;
         left: 20%;
       }
+
+      @media screen and (max-width: 430px) {
+        bottom: 15%;
+        left: 10%;
+      }
     }
   }
-
-/* .container {
-  height: 100%;
-  max-width: 1140px;
-  margin: 0 auto;
-  @media screen and (max-width: 1150px) {
-    max-width: 950px;
-  }
-  @media screen and (max-width: 980px) {
-    max-width: 800px;
-  }
-  @media screen and (max-width: 830px) {
-    max-width: 700px;
-  }
-  @media screen and (max-width: 730px) {
-    max-width: 620px;
-  }
-  @media screen and (max-width: 650px) {
-    max-width: 530px;
-  }
-  @media screen and (max-width: 560px) {
-    max-width: 480px;
-  }
-} */
