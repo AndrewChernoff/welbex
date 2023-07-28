@@ -1,6 +1,15 @@
 @import '../../common/styles/styles.scss';
 
 .footer {
+
+    @media screen and (max-width: 530px) {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background: black;
+    }
+
+    &__content {
     display: grid;
     grid-template-columns: 25% 35% auto;
     padding: 30px 0 15px 0;
@@ -60,6 +69,9 @@
             justify-content: space-between;
             ul {
                 margin: 0;
+                li {
+
+                }
             }
         }
     }
@@ -118,4 +130,5 @@
             }
         }
     }
+}
 }

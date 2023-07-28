@@ -10,11 +10,23 @@
     @media screen and (max-width: 1080px) {
         grid-template-columns: 25% 45% 30%;
           }
+    
+    @media screen and (max-width: 981px) {
+        display: block;
+        background: #000;
+        width: 100%;
+        left: 0;
+        position: absolute;
+        z-index: 1;
+        }
 
     &__logo {
         display:flex;
         flex-direction: column;
         color: $base-color;
+        @media screen and (max-width: 981px) {
+            display: none;
+        }
         img {
             display: block;
             width: 140px;
@@ -37,7 +49,7 @@
     }
     &__list {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             align-items: center;
             list-style:none;
             padding:0;
@@ -46,6 +58,16 @@
                 justify-content: space-around;
                 flex-wrap: wrap;
                 gap: 5px;
+            }
+            @media screen and (max-width: 981px) {
+                display: flex;
+                justify-content: space-between;
+            
+            }
+
+            @media screen and (max-width: 530px) {
+                margin: 0 auto;
+                width: 80%;
             }
         li {
             font-family: 'Inter';
@@ -57,7 +79,20 @@
             @media screen and (max-width: 1100px) {
                 font-size: 14px;
               }
+            @media screen and (max-width: 981px) {
+                font-family: Inter;
+                font-size: 12px;
+                font-weight: 500;
+              } 
         }
+
+        @media screen and (max-width: 530px) {
+                li:last-child {
+                    display: none;
+                }    
+            }
+
+        
     }
     &__contacts {
         display: flex;
@@ -65,10 +100,16 @@
         align-items: center;
         color: $base-color;
         margin-left: 60px;
+        @media screen and (max-width: 1150px) {
+            margin-left: 40px;
+          }
         @media screen and (max-width: 1100px) {
             flex-wrap: wrap;
             gap: 5px;
           }
+          @media screen and (max-width: 981px) {
+            display: none;
+        }
 
           /* @media screen and (max-width: 830px) {
             display: none;

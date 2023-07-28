@@ -1,12 +1,14 @@
 import logo from '../../imgs/logo_welbex.png'
 import s from './Header.module.scss';
+import style from '../../common/styles/container.module.scss';
 import telegram from '../../imgs/telegram.png'
 import viber from '../../imgs/viber.png'
 import whatsapp from '../../imgs/whatsapp.png'
 
 function Header() {
     return (
-        <header className={s.header}>
+     <header className={s.header}>
+        <div className={style.container}>
             <div className={s.header__logo}>
                 <img src={logo} alt='logo'/>
                 <p>крупный интегратор CRM <br/>
@@ -29,7 +31,18 @@ function Header() {
                     <a href='#'><img src={whatsapp} className={s.header__contacts_icon} style={{color: '#E4E5EA'}}/></a>
                 </div>
             </div>
+            </div>
         </header>
+        /* <header className={s.smallHeader__list}>
+        <ul className={s.smallHeader__list}>
+                <li>Услуги</li>
+                <li>Виджеты</li>
+                <li>Интеграции</li>
+                <li>Кейсы</li>
+                <li>Сертификаты</li>
+            </ul>
+
+        </header> */
     )
 }
 
