@@ -7,23 +7,25 @@
 
     @media screen and (max-width: 980px) {
         padding-top: 160px;
-      }
+    }
 
-    @media screen and (max-width: /* 670 */801px) {
-            flex-direction: column;
-            align-items: center;
-            padding-top: 110px;
-            /* justify-content: center;
-            align-items: center; */
-        }
+    @media screen and (max-width:
+
+        /* 670 */
+        801px) {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 110px;
+    }
 
     &__title {
         z-index: 1;
+
         @media screen and (max-width: 801px) {
             width: 70%;
-           }
+        }
 
-           @media screen and (max-width: 380px) {
+        @media screen and (max-width: 380px) {
             width: 100%;
         }
 
@@ -33,6 +35,7 @@
             font-size: 48px;
             color: $base-color;
             margin: 0;
+
             @media screen and (max-width: 730px) {
                 font-size: 35px;
             }
@@ -45,35 +48,40 @@
                 background: -webkit-radial-gradient(#FF3F78, #FCB045);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
+
                 @media screen and (max-width: 730px) {
                     font-size: 52px;
                 }
+
                 @media screen and (max-width: 4400px) {
                     font-size: 45px;
                 }
             }
         }
+
         p {
             font-family: 'Montserrat';
             font-weight: 400;
             font-size: 18px;
             color: $base-color;
+
             @media screen and (max-width: 561px) {
                 font-size: 17px;
             }
         }
     }
+
     &__content {
         width: 35%;
 
         @media screen and (max-width: 800px) {
             width: 70%;
-           }
+        }
 
-           @media screen and (max-width: 380px) {
+        @media screen and (max-width: 380px) {
             width: 100%;
-         }
-        
+        }
+
         h2 {
             font-family: 'Inter';
             font-weight: 500;
@@ -81,22 +89,24 @@
             line-height: 22px;
             font-size: 18px;
             color: $base-color;
+
             @media screen and (max-width: 801px) {
                 text-align: left;
                 font-size: 15px;
                 line-height: 25px;
-               }
+            }
 
             span {
                 font-size: 18px;
                 font-weight: 700;
-                background: -webkit-radial-gradient(#FCB045,#FD1D1D);
+                background: -webkit-radial-gradient(#FCB045, #FD1D1D);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 text-transform: uppercase;
+
                 @media screen and (max-width: 835px) {
                     font-size: 15px;
-                   }
+                }
             }
         }
 
@@ -105,31 +115,32 @@
             justify-content: space-between;
             flex-wrap: wrap;
             margin-top: 50px;
+
             @media screen and (max-width: 1100px) {
                 gap: 15px;
-               justify-content: end;
-              }
-            @media screen and (max-width: /* 835 */801px) {
-               justify-content: start;
-               /* gap: 35px; */
-              }
-            /* @media screen and (max-width: 835px) {
-               justify-content: space-between;
-              } */
-              @media screen and (max-width: 561px) {
+                justify-content: end;
+            }
+
+            @media screen and (max-width: 801px) {
+                justify-content: start;
+            }
+
+            @media screen and (max-width: 561px) {
                 display: none;
-               } 
+            }
 
         }
+
         &_giftsItem {
             color: $base-color;
             min-width: 90px;
             max-width: 143px;
             text-align: right;
+
             @media screen and (max-width: 800px) {
                 text-align: left;
-               }
-            
+            }
+
             h3 {
                 font-family: 'Inter';
                 font-weight: 500;
@@ -137,22 +148,19 @@
                 font-size: 18px;
                 line-height: 22px;
             }
+
             p {
                 font-family: 'Montserrat';
                 font-weight: 400;
                 font-size: 16px;
                 margin-top: 10px;
-
-
-                
-                /* @media screen and (max-width: 561px) {
-                    display: none;
-                   } */
             }
         }
 
-        &_otherGifts { /*user will see on 561 screen width*/
+        &_otherGifts {
+            /*user will see on 561 screen width*/
             display: none;
+
             @media screen and (max-width: 561px) {
                 display: flex;
                 justify-content: space-around;
@@ -178,12 +186,11 @@
                             position: absolute;
                             background: linear-gradient(to bottom, #FCB045 50%, #FD1D1D 50%);
 
-                          }
+                        }
                     }
-                       
-                    
+
                 }
-               } 
+            }
         }
 
         button {
@@ -199,11 +206,11 @@
                 width: 212px;
                 height: 51px;
                 margin: 25px auto auto 0;
-               }
+            }
 
-               @media screen and (max-width: 561px) {
+            @media screen and (max-width: 561px) {
                 display: none;
-               } 
+            }
         }
     }
 }

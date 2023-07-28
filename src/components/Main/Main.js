@@ -18,10 +18,7 @@ function Main() {
     ]
 
     return (
-        <div className={`${s.main} ${style.container}`}>
-            {/* <div className={style.container}> */}
-                
-
+        <div className={`${s.main} ${style.container}`}>                
             <div className={s.main__title}>
                 <h1>Зарабатывайте <br/> 
                 больше <br/>
@@ -53,7 +50,6 @@ function Main() {
 
                 <button>Получить консультацию</button>
             </div>
-            {/* </div> */}
         </div>
     )
 }

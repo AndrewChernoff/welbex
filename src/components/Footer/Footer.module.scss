@@ -10,129 +10,138 @@
     }
 
     &__content {
-    display: grid;
-    grid-template-columns: 25% 35% auto;
-    padding: 30px 0 15px 0;
+        display: grid;
+        grid-template-columns: 25% 35% auto;
+        padding: 30px 0 15px 0;
 
-    @media screen and (max-width: 800px) {
-        grid-template-columns: 35% 50%;
-        gap: 15px;
-       }
+        @media screen and (max-width: 800px) {
+            grid-template-columns: 35% 50%;
+            gap: 15px;
+        }
 
-       @media screen and (max-width: 561px) {
+        @media screen and (max-width: 561px) {
             grid-template-columns: 35% 62%;
-      }
-       @media screen and (max-width: 510px) {
-           grid-template-columns: auto;
-           grid-template-rows: auto auto auto;
-           padding: 30px 10px 30px 10px;
-      }
-
-      @media screen and (max-width: 510px) {
-        grid-template-columns: auto;
-        padding: 30px 10px 15px 10px;
-    }
-    h4 {
-        font-family: 'Inter';
-        font-weight: 700;
-        font-size: 16px;
-        margin: 0 0 15px 0;
-        color: #656566;
-        @media screen and (max-width: 800px) {
-            font-size: 14px;
-           }
-    }
-
-    ul {
-        padding: 0;
-    li {
-        margin-top: 10px;
-        list-style-type: none;
-        a {
-        font-family: 'Inter';
-        font-weight: 400;
-        font-size: 14px;
-        color: $base-color;
-        text-decoration: none;
-        cursor: pointer;
-        @media screen and (max-width: 800px) {
-            font-size: 12px;
-           }
-        }
-    }
-
-}
-
-    &__menu {  
-        &_list {
-            display: flex;
-            align-items: left;
-            justify-content: space-between;
-            @media screen and (max-width: 540px) {
-                gap: 40px;
-               }
-            @media screen and (max-width: 335px) {
-                gap: 30px;
-               }
-            ul {
-                margin: 0;
-            }
-        }
-    }
-
-    &__contacts {
-        text-align: right;
-        &_phone {
-        font-family: 'Inter';
-        font-weight: 500;
-        font-size: 16px;
-        color: $base-color;
         }
 
-        @media screen and (max-width: 801px) {
-            text-align: left;
-           }
-
-          /*  @media screen and (max-width: 730px) {
-            text-align: left;
-           } */
-
-        &_items {
-            display: flex;
-            flex-direction: column;
-            gap: 18px;
-        }
-        &_links {
-            display: flex;
-            justify-content: end;
-            gap: 25px;
-
-            @media screen and (max-width: 801px) {
-                justify-content: start;
-            }
+        @media screen and (max-width: 510px) {
+            grid-template-columns: auto;
+            grid-template-rows: auto auto auto;
+            padding: 30px 10px 30px 10px;
         }
 
-        address {
+        @media screen and (max-width: 510px) {
+            grid-template-columns: auto;
+            padding: 30px 10px 15px 10px;
+        }
+
+        h4 {
+            font-family: 'Inter';
+            font-weight: 700;
             font-size: 16px;
-            font-weight: 400;
-            color: $base-color;
-            @media screen and (max-width: 510px) {
+            margin: 0 0 15px 0;
+            color: #656566;
+
+            @media screen and (max-width: 800px) {
                 font-size: 14px;
             }
         }
-        &_rights {
-            margin: 55px 0 55px 0;
-            font-family: 'Montserrat';
-            font-weight: 400;
-            font-size: 12px;
-            color: $base-color;
 
-            a {
-                display: block;
+        ul {
+            padding: 0;
+
+            li {
+                margin-top: 10px;
+                list-style-type: none;
+
+                a {
+                    font-family: 'Inter';
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: $base-color;
+                    text-decoration: none;
+                    cursor: pointer;
+
+                    @media screen and (max-width: 800px) {
+                        font-size: 12px;
+                    }
+                }
+            }
+
+        }
+
+        &__menu {
+            &_list {
+                display: flex;
+                align-items: left;
+                justify-content: space-between;
+
+                @media screen and (max-width: 540px) {
+                    gap: 40px;
+                }
+
+                @media screen and (max-width: 335px) {
+                    gap: 30px;
+                }
+
+                ul {
+                    margin: 0;
+                }
+            }
+        }
+
+        &__contacts {
+            text-align: right;
+
+            &_phone {
+                font-family: 'Inter';
+                font-weight: 500;
+                font-size: 16px;
                 color: $base-color;
-                margin-top: 5px;
+            }
+
+            @media screen and (max-width: 801px) {
+                text-align: left;
+            }
+
+            &_items {
+                display: flex;
+                flex-direction: column;
+                gap: 18px;
+            }
+
+            &_links {
+                display: flex;
+                justify-content: end;
+                gap: 25px;
+
+                @media screen and (max-width: 801px) {
+                    justify-content: start;
+                }
+            }
+
+            address {
+                font-size: 16px;
+                font-weight: 400;
+                color: $base-color;
+
+                @media screen and (max-width: 510px) {
+                    font-size: 14px;
+                }
+            }
+
+            &_rights {
+                margin: 55px 0 55px 0;
+                font-family: 'Montserrat';
+                font-weight: 400;
+                font-size: 12px;
+                color: $base-color;
+
+                a {
+                    display: block;
+                    color: $base-color;
+                    margin-top: 5px;
+                }
             }
         }
     }
-}
 }
